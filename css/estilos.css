@@ -24,6 +24,7 @@
  a{text-decoration: none; color:#fc8506;}
  
  li{color: #fc8506;}
+
  li:hover {background-color:gray; padding-left: 10px; padding-right: 10px;}     
  
 /* .img{width: 300px; height: 200px;} */
@@ -32,6 +33,9 @@
         padding-bottom: 100px;}
 .navbar-brand:hover{background-color: gray;}
 .nav-link{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}           
+
+/*SECCIONES*/
+
 .section {padding-left: 40px; padding-right: 40px; padding-top: 10px; padding-bottom: 10px}
 
 .flexBoton{display: flex; justify-content: center; align-items: center; padding-top: 20px;}
@@ -63,7 +67,7 @@
     list-style-type: none;margin: 0%; padding-top: 20px; padding-bottom: 20px;}
 
     
-    @media  only screen and (min-width:0px) and (max-width: 767px) {
+@media  only screen and (min-width:0px) and (max-width: 767px) {
 
         /*HEADER*/
     
