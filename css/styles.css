@@ -58,7 +58,7 @@ li {
     padding-right: 10px; }
 
 .header {
-  background-image: url(./Imagenes/Header.png);
+  background-image: url(../Imagenes/Header.png);
   background-size: cover;
   padding-bottom: 100px; }
 
