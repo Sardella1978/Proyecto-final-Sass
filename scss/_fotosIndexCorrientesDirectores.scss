@@ -1,4 +1,10 @@
-.gridFotos {display: grid; grid-template-columns: repeat(4, 2fr);
-    grid-template-rows: auto;         
-    grid-column-gap: 10px;}
-.gridFotosImage {width: 100%; height: 100%;}
+.gridFotos {
+	display: grid;
+	grid-template-columns: repeat(4, 2fr);
+	grid-template-rows: auto;
+	grid-column-gap: 10px;
+}
+.gridFotosImage {
+	width: 100%;
+	height: 100%;
+}
