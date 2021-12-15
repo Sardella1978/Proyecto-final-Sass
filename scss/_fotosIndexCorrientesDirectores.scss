@@ -7,4 +7,11 @@
 .gridFotosImage {
 	width: 100%;
 	height: 100%;
+
+	/*INDEX-GALERÍA*/
 }
+.gridFotosImageIndex{display: grid;
+	grid-template-columns: repeat(6, 2fr);
+	grid-template-rows: auto;
+	grid-column-gap: 10px;
+    width: 100%; height: 100%;}
