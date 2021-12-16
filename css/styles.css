@@ -8,54 +8,52 @@
   margin: 0px; }
 
 h1 {
-  color: #fc8506;
   padding-top: 100px;
   padding-right: 50px;
   text-align: right;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 4rem; }
 
 h2 {
-  color: #fc8506;
-  text-align: center;
-  background-color: black;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  text-align: center; }
 
 h3 {
-  color: #fc8506;
-  background-color: black;
-  padding-left: 10px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  padding-left: 10px; }
 
 h5 {
   text-align: center;
-  color: #fc8506;
-  background-color: black;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  border-style: solid;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  border-style: solid; }
   h5:hover {
     background-color: gray; }
 
 h6 {
-  text-align: center;
-  background-color: black;
-  color: #fc8506;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+  text-align: center; }
 
 a {
-  text-decoration: none;
-  color: #fc8506; }
+  text-decoration: none; }
+
+li:hover {
+  background-color: gray;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+h1, h2, h3, h5, h6 {
+  color: #fc8506;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
+
+h2, h3, h5, h6 {
+  background-color: black; }
+
+a {
+  color: #fc8506;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
 
 li {
-  color: #fc8506; }
-  li:hover {
-    background-color: gray;
-    padding-left: 10px;
-    padding-right: 10px; }
+  color: #fc8506;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
 
 .header {
   background-image: url(../Imagenes/Header.png);
