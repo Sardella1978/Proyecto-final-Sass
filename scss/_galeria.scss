@@ -1,11 +1,11 @@
-.gridGalería {
-	display: grid;
+.gridGalería {display: grid;
 	grid-template-columns: repeat(6, 2fr);
 	grid-template-rows: repeat(4, 4fr);
 	grid-column-gap: 10px;
-	grid-row-gap: 10px;
-}
-.imgGalería {
+	grid-row-gap: 10px;}
+
+
+.imgGalería{
 	width: 100%;
 	height: 100%;
 	&:hover {

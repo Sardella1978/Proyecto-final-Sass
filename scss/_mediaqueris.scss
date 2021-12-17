@@ -1,7 +1,4 @@
-/*HEADER*/
-/*INDEX - CORRIENTES - DIRECTORES*/
-/*GALERÍA*/
-/*FOOTER*/
+
 @media only screen and (min-width:0px) and (max-width: 767px) {
 	.header {
 		background-image: none;
@@ -9,13 +6,7 @@
 		display: flex;
 		flex-direction: column;
 	}
-	.nav {
-		ul {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-		}
-	}
+	
 	.gridFotos {
 		display: grid;
 		grid-template-columns: repeat(2, 2fr);
