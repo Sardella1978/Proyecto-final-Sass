@@ -5,7 +5,7 @@
 	grid-row-gap: 10px;}
 
 
-.imgGalería{ @include imagenes(100%, 100%);
+.imgGalería{ @include imagenes(85%, 100%);
 	
 	&:hover {
 		transform: scale(1.3);
