@@ -25,37 +25,66 @@
   </header>   
   
   <!--NAV CON BOOTSTRAP--> 
-
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" style="color: #fc8506; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="../index.html">CineArte.com</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: #fc8506;">
+      <a class="navbar-brand" style="color: #fc8506;" href="../index.html">CineArte.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav";>
-          <ul class="navbar-nav justify-content-around flex-grow-1 pe-3">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav justify-content-around flex-grow-1 pe-3">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="color: #fc8506;" href="./Corrientes.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Corrientes
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: black;">
+              <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#lospioneros">Los pioneros</a></li>
+              <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#laindustriayelarte">La industria y el arte</a></li>
+              <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#elcinemudo">Cine mudo</a></li>
+              <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#elcinesonoro">Cine sonoro</a></li>
+              <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#neorrealismo">Neorrealismo italiano</a></li>
+              <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#nouvelle">Nouvelle Vage</a></li>
+              <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#hollywood">Cine clásico de Hollywood</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" style="color: #fc8506;" href="./Directores.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Directores
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: black;">
+              <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#lumiere">Los hermanos Lumiere</a></li>
+              <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#melies">George Melies</a></li>
+              <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#griffith">David Griffith</a></li>
+              <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#murnau">Frederich Murnau</a></li>
+              <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#eisestein">Sergei Eisenstein</a></li>
+              <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#buñuel">Luis Buñuel</a></li>
+              <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#chaplin">Charles Chaplin</a></li>
+              <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#wells">Orson Wells</a></li>
+              <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#hitchckok">Alfred Hitchckok</a></li>
+              <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#truffaut">Francoise Trufaut</a></li>
+              <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#rosellini">Roberto Rosellini</a></li>
+            </ul>
+          </li>
+          
           <li class="nav-item">
-            <a class="nav-link" style="color: #fc8506; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="../Pages/Corrientes.html">Corrientes</a>
+            <a class="nav-link" style="color: #fc8506;" href="./Galería.html">Galería</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" style="color: #fc8506; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="../Pages/Directores.html">Directores</a>
+            <a class="nav-link" style="color: #fc8506;" href="./Contacto.html">Contacto</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: #fc8506; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="../Pages/Galería.html">Galería</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: #fc8506;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="../Pages/Contacto.html">Contacto</a>
-          </li>
+          
         </ul>
       </div>
     </div>
-    </nav> 
+  </nav>
+
+  
 
     <!--SECCIONES-->
         <section class="section">
             <h2>Corrientes cinematográficas</h2>
             
-              <h3>Los Pioneros</h3>
+              <div id="lospioneros"><h3>Los Pioneros</h3></div>
 
                 <p>Durante la última década del siglo XIX, en pleno apogeo de la Revolución Industrial y la carrera por la creación científica y tecnológica,<stong> Louis Lumière</stong>, que, junto a su padre Antoine y su hermano Auguste, poseían una fábrica fotográfica en Lyon, crea un “aparato que sirve para la obtención y visión de pruebas cronofotográficas”. Al mismo lo bautizaron con el nombre de Cinematógrafo y será la primera máquina capaz de reproducir imágenes en movimiento. <br>
                   El invento fue patentado el 13 de febrero de 1895 y, luego de varias pruebas, decidieron hacer su primera presentación pública el 28 de diciembre de ese mismo año. El lugar elegido fue un pequeño salón situado en el Grand Café de París: el Salón Indien. Las expectativas eran muy escasas, de hecho, concurrieron muy pocas personas a esa primera presentación pública. Sin embargo, al apagarse la luz y comenzar la proyección de aquellas imágenes, los pocos espectadores que habían asistido quedaron maravillados. La voz no tardó en correr por las calles de París y a los pocos días, el cinematógrafo se había convertido en un verdadero éxito. <br> 
@@ -120,7 +149,7 @@
               
               
 
-            <h3>El cine institucional</h3>
+            <div id="laindustriayelarte"><h3>La industria y el arte</h3></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
               nsequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
@@ -135,7 +164,7 @@
               <img src="../Imagenes/Corrientes/La comida del bebe.jpg" alt="" class="gridFotosImage">
           </div>
                                                      
-            <h3>Las vanguardias</h3>
+            <div id="elcinemudo"><h3>El cine mudo</h3></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
               nsequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
@@ -150,7 +179,7 @@
             <img src="../Imagenes/Corrientes/Asalto y robo de un tren1.jpg" alt="" class="gridFotosImage">
           </div>
                         
-            <h3>El cine sonoro</h3>
+            <div id="elcinesonoro"><h3>El cine sonoro</h3></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
               nsequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
@@ -165,7 +194,7 @@
             <img src="../Imagenes/Corrientes/La comida del bebe.jpg" alt="" class="gridFotosImage">
           </div>
                         
-            <h3>El Neorrealismo italiano</h3>
+            <div id="neorrealismo"><h3>El Neorrealismo italiano</h3></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
               nsequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
@@ -179,7 +208,8 @@
             <img src="../Imagenes/Corrientes/Nosferatu.jpg" alt="" class="gridFotosImage"> 
             <img src="../Imagenes/Corrientes/La comida del bebe.jpg" alt="" class="gridFotosImage">
           </div>        
-            <h3>La Nouvelle Vage</h3>
+            
+             <div id="nouvelle"><h3>La Nouvelle Vage</h3></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
               nsequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
@@ -195,7 +225,7 @@
           </div>
 
                
-            <h3>Cine clásico de Hollywood</h3>
+            <div id="hollywood"><h3>Cine clásico de Hollywood</h3></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
               nsequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.

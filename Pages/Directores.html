@@ -29,35 +29,65 @@
 <!--NAV CON BOOTSTRAP-->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" style="color: #fc8506; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="../index.html">CineArte.com</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: #fc8506;">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav";>
-          <ul class="navbar-nav justify-content-around flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link" style="color: #fc8506; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="../Pages/Corrientes.html">Corrientes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: #fc8506; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="../Pages/Directores.html">Directores</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: #fc8506; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="../Pages/Galería.html">Galería</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: #fc8506;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="../Pages/Contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
+  <div class="container-fluid">
+    <a class="navbar-brand" style="color: #fc8506;" href="../index.html">CineArte.com</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav justify-content-around flex-grow-1 pe-3">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="color: #fc8506;" href="Corrientes.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Corrientes
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: black;">
+            <li><a class="dropdown-item" style="color: #fc8506;" href="Corrientes.html">Los pioneros</a></li>
+            <li><a class="dropdown-item" style="color: #fc8506;" href="Corrientes.html#laindustriayelarte">La industria y el arte</a></li>
+            <li><a class="dropdown-item" style="color: #fc8506;" href="Corrientes.html#elcinemudo">Cine mudo</a></li>
+            <li><a class="dropdown-item" style="color: #fc8506;" href="Corrientes.html#elcinesonoro">Cine sonoro</a></li>
+            <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#neorrealismo">Neorrealismo italiano</a></li>
+            <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#nouvelle">Nouvelle Vage</a></li>
+            <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#hollywood">Cine clásico de Hollywood</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="color: #fc8506;" href="./Directores.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Directores
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: black;">
+            <li><a class="dropdown-item" style="color: #fc8506;" href="./Directores.html#lumiere">Los hermanos Lumiere</a></li>
+            <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#melies">George Melies</a></li>
+            <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#griffith">David Griffith</a></li>
+            <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#murnau">Frederich Murnau</a></li>
+            <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#eisestein">Sergei Eisenstein</a></li>
+            <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#buñuel">Luis Buñuel</a></li>
+            <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#chaplin">Charles Chaplin</a></li>
+            <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#wells">Orson Wells</a></li>
+            <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#hitchckok">Alfred Hitchckok</a></li>
+            <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#truffaut">Francoise Trufaut</a></li>
+            <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#rosellini">Roberto Rosellini</a></li>
+          </ul>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" style="color: #fc8506;" href="./Galería.html">Galería</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #fc8506;" href="./Contacto.html">Contacto</a>
+        </li>
+        
+      </ul>
     </div>
-  </nav>   
+  </div>
+</nav>
+
 
 <!--SECCIONES-->
 
         <section class="section">
             <h2>Directores más destacados</h2>
-            <h3>Los hermanos Lumiere</h3>
+            
+            <div id="lumiere"><h3>Los hermanos Lumiere</h3></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, consequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
@@ -76,7 +106,7 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, laboriosam similique, voluptatem, et eligendi quos earum asperiores sed ad commodi magni. Adipisci nihil tenetur, magnam dolores similique sequi quaerat optio.
                 </p>
             
-            <h3>George Melies</h3>
+            <div id="melies"><h3>George Melies</h3></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, consequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
@@ -95,7 +125,7 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, laboriosam similique, voluptatem, et eligendi quos earum asperiores sed ad commodi magni. Adipisci nihil tenetur, magnam dolores similique sequi quaerat optio.
           </p>
             
-            <h3>David Griffit</h3>
+            <div id="griffith"><h3>David Griffit</h3></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, consequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
@@ -114,7 +144,45 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, laboriosam similique, voluptatem, et eligendi quos earum asperiores sed ad commodi magni. Adipisci nihil tenetur, magnam dolores similique sequi quaerat optio.
           </p>
             
-            <h3>Frederich Murnau</h3>
+            <div id="murnau"><h3>Frederich Murnau</h3></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, consequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, laboriosam similique, voluptatem, et eligendi quos earum asperiores sed ad commodi magni. Adipisci nihil tenetur, magnam dolores similique sequi quaerat optio.
+          </p>
+      
+          <div class="gridFotos">
+              <img src="../Imagenes/Directores/Lumiere.jpg" alt="" class="gridFotosImage">
+              <img src="../Imagenes/Directores/David Griffith.gif" alt="" class="gridFotosImage"> 
+              <img src="../Imagenes/Directores/Chaplin2.jpg" alt="" class="gridFotosImage">        
+              <img src="../Imagenes/Directores/Hitchckok 300x200.jpg" alt="" class="gridFotosImage">
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, consequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, laboriosam similique, voluptatem, et eligendi quos earum asperiores sed ad commodi magni. Adipisci nihil tenetur, magnam dolores similique sequi quaerat optio.
+          </p>
+          
+          <div id="eisestein"><h3>Sergei Eisestein</h3></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, consequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, laboriosam similique, voluptatem, et eligendi quos earum asperiores sed ad commodi magni. Adipisci nihil tenetur, magnam dolores similique sequi quaerat optio.
+          </p>
+      
+          <div class="gridFotos">
+              <img src="../Imagenes/Directores/Lumiere.jpg" alt="" class="gridFotosImage">
+              <img src="../Imagenes/Directores/David Griffith.gif" alt="" class="gridFotosImage"> 
+              <img src="../Imagenes/Directores/Chaplin2.jpg" alt="" class="gridFotosImage">        
+              <img src="../Imagenes/Directores/Hitchckok 300x200.jpg" alt="" class="gridFotosImage">
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, consequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, laboriosam similique, voluptatem, et eligendi quos earum asperiores sed ad commodi magni. Adipisci nihil tenetur, magnam dolores similique sequi quaerat optio.
+          </p>
+
+          <div id="buñuel"><h3>Luis Buñuel</h3></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, consequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
@@ -133,7 +201,7 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, laboriosam similique, voluptatem, et eligendi quos earum asperiores sed ad commodi magni. Adipisci nihil tenetur, magnam dolores similique sequi quaerat optio.
           </p>
             
-            <h3>Charles Chaplin</h3>
+            <div id="chaplin"><h3>Charles Chaplin</h3></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, consequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
@@ -152,7 +220,26 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, laboriosam similique, voluptatem, et eligendi quos earum asperiores sed ad commodi magni. Adipisci nihil tenetur, magnam dolores similique sequi quaerat optio.
           </p>
             
-            <h3>Orson Wells</h3>
+            <div id="wells"><h3>Orson Wells</h3></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, consequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, laboriosam similique, voluptatem, et eligendi quos earum asperiores sed ad commodi magni. Adipisci nihil tenetur, magnam dolores similique sequi quaerat optio.
+          </p>
+      
+          <div class="gridFotos">
+              <img src="../Imagenes/Directores/Lumiere.jpg" alt="" class="gridFotosImage">
+              <img src="../Imagenes/Directores/David Griffith.gif" alt="" class="gridFotosImage"> 
+              <img src="../Imagenes/Directores/Chaplin2.jpg" alt="" class="gridFotosImage">        
+              <img src="../Imagenes/Directores/Hitchckok 300x200.jpg" alt="" class="gridFotosImage">
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, consequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, laboriosam similique, voluptatem, et eligendi quos earum asperiores sed ad commodi magni. Adipisci nihil tenetur, magnam dolores similique sequi quaerat optio.
+          </p>
+
+          <div id="hitchckok"><h3>Alfred Hitchckok/h3></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, consequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
@@ -171,7 +258,26 @@
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, laboriosam similique, voluptatem, et eligendi quos earum asperiores sed ad commodi magni. Adipisci nihil tenetur, magnam dolores similique sequi quaerat optio.
           </p>
             
-            <h3>Francoise Truffaut</h3>
+            <div id="truffaut"><h3>Francoise Truffaut</h3></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, consequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, laboriosam similique, voluptatem, et eligendi quos earum asperiores sed ad commodi magni. Adipisci nihil tenetur, magnam dolores similique sequi quaerat optio.
+          </p>
+      
+          <div class="gridFotos">
+              <img src="../Imagenes/Directores/Lumiere.jpg" alt="" class="gridFotosImage">
+              <img src="../Imagenes/Directores/David Griffith.gif" alt="" class="gridFotosImage"> 
+              <img src="../Imagenes/Directores/Chaplin2.jpg" alt="" class="gridFotosImage">        
+              <img src="../Imagenes/Directores/Hitchckok 300x200.jpg" alt="" class="gridFotosImage">
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, consequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, laboriosam similique, voluptatem, et eligendi quos earum asperiores sed ad commodi magni. Adipisci nihil tenetur, magnam dolores similique sequi quaerat optio.
+          </p>
+
+          <div id="rosellini"><h3>Roberto Rosellini</h3></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nesciunt ipsum sit odio amet, quibusdam ipsa officiis tenetur, incidunt explicabo nulla alias, labore veniam? Velit voluptate aliquam ea dolor consequuntur!
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, veritatis. Ipsa fugit id iusto eius in maxime odit esse veniam, earum nesciunt alias non eum! Praesentium iusto placeat tempore iure.
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, consequuntur officia quia aut totam reiciendis quaerat eum harum. Et soluta ipsa odio vitae ea accusantium praesentium facere dolorum, illo maxime.
