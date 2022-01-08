@@ -41,6 +41,10 @@ li:hover {
   padding-left: 10px;
   padding-right: 10px; }
 
+.subtitulo {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
 h1, h2, h3, h5, h6 {
   color: #fc8506;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
@@ -78,8 +82,8 @@ li {
 .section {
   padding-left: 40px;
   padding-right: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .flexBoton {
   display: flex;
@@ -107,9 +111,9 @@ li {
 .gridGalería {
   display: grid;
   grid-template-columns: repeat(6, 2fr);
-  grid-template-rows: repeat(4, 4fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px; }
+  grid-template-rows: repeat(3, 4fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px; }
 
 .imgGalería {
   height: 85%;
@@ -131,7 +135,8 @@ li {
   list-style-type: none;
   margin: 0%;
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  margin-bottom: 10px; }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .header {
@@ -147,8 +152,8 @@ li {
     grid-row-gap: 10px; }
   .gridGalería {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(3, 4fr);
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-rows: repeat(1, 4fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px; }
   .imgGalería {
