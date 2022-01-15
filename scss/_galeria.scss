@@ -2,7 +2,8 @@
 	grid-template-columns: repeat(6, 2fr);
 	grid-template-rows: repeat(3, 4fr);
 	grid-column-gap: 20px;
-	grid-row-gap: 20px;}
+	grid-row-gap: 30px;
+    padding-bottom: 30px}
 
 
 .imgGalería{ @include imagenes(85%, 100%);
