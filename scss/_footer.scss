@@ -1,15 +1,26 @@
-.footer {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-around;
-	background-color: black;
-	font-family: $fuente;
-	list-style-type: none;
-	margin: 0%;
-	padding-top: 20px;
-	
-	
+
+.footer { display: flex; flex-flow: row nowrap; 
+	      justify-content: center; 
+		  background-color: black;
+          font-family: $fuente; 
+		  list-style-type: none;
+          margin: 0%;
+          padding-top: 20px; padding-bottom: 20px;
+          column-gap: 200px;
 }
-.copy{padding-top: 30px;
-      padding-bottom: 10px;
-	  background-color: black;}
+
+.footerredes{ display: flex;
+              justify-content: center;
+			  background-color: black;
+			  font-size: 2rem;
+			  list-style-type: none;
+			  column-gap: 50px;
+			  margin-bottom: 0%;}
+
+.copy{display: flex;
+	  padding-bottom: 10px;
+	  background-color: black;
+	  text-align: left; padding-left: 20px;}
+
+	  
+

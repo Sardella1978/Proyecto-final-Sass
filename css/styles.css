@@ -3,7 +3,6 @@
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   text-align: justify;
-  background-color: #d6d2d2;
   line-height: 1.5;
   margin: 0px;
   background-color: #FFD433; }
@@ -12,7 +11,7 @@ h1 {
   padding-top: 100px;
   padding-right: 50px;
   text-align: right;
-  font-size: 4rem; }
+  font-size: 3.5rem; }
 
 h2 {
   text-align: center; }
@@ -61,11 +60,6 @@ li {
   color: #fc8506;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; }
 
-/*CARRUSEL*/
-.carrusel {
-  width: 100%;
-  height: 50px; }
-
 .header {
   background-image: url(../Imagenes/Header.png);
   background-size: cover;
@@ -94,7 +88,7 @@ li {
 
 .gridFotos, .gridFotosImageIndex {
   display: grid;
-  grid-template-columns: repeat(4, 2fr);
+  grid-template-columns: repeat(3, 2fr);
   grid-template-rows: auto;
   grid-column-gap: 10px; }
 
@@ -130,35 +124,56 @@ li {
 .footer {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: center;
   background-color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   list-style-type: none;
   margin: 0%;
-  padding-top: 20px; }
+  padding-top: 20px;
+  padding-bottom: 20px;
+  column-gap: 200px; }
+
+.footerredes {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  font-size: 2rem;
+  list-style-type: none;
+  column-gap: 50px;
+  margin-bottom: 0%; }
 
 .copy {
-  padding-top: 30px;
+  display: flex;
   padding-bottom: 10px;
-  background-color: black; }
+  background-color: black;
+  text-align: left;
+  padding-left: 20px; }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  h1 {
+    padding-top: none;
+    padding-right: none;
+    text-align: center;
+    font-size: 3.5rem; }
   .gridFotos, .gridFotosImageIndex {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(2, 2fr);
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-rows: repeat(1, 2fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px; }
   .gridGalería {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(1, 4fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px; }
+    grid-template-rows: repeat(2, 4fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; }
   .imgGalería {
     width: 100%;
     height: 85%; }
   .footer {
     display: flex;
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .gridFotosImageIndex {
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(2, 2fr); } }

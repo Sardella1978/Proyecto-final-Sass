@@ -1,5 +1,10 @@
 
 @media only screen and (min-width:0px) and (max-width: 767px) {
+	h1 {padding-top: none;
+		padding-right: none;
+		text-align: center;
+		font-size: 3.5rem;}
+	
 	.header {
 		// background-image: none;
 		// background-color: black;
@@ -9,17 +14,17 @@
 	
 	.gridFotos {
 		display: grid;
-		grid-template-columns: repeat(2, 2fr);
-		grid-template-rows: repeat(2, 2fr);
+		grid-template-columns: repeat(1, 2fr);
+		grid-template-rows: repeat(1, 2fr);
 		grid-column-gap: 10px;
 		grid-row-gap: 10px;
 	}
 	.gridGalería {
 		display: grid;
 		grid-template-columns: repeat(2, 2fr);
-		grid-template-rows: repeat(1, 4fr);
-		grid-column-gap: 10px;
-		grid-row-gap: 10px;
+		grid-template-rows: repeat(2, 4fr);
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
 	}
 	.imgGalería {
 		width: 100%;
@@ -30,4 +35,8 @@
 		flex-direction: column;
 		align-items: center;
 	}
+	.gridFotosImageIndex{
+		grid-template-columns: repeat(2, 2fr);
+		grid-template-rows: repeat(2,2fr);
+	    }
 }
