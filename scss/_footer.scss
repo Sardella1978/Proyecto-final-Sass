@@ -1,7 +1,7 @@
 
 .footer { display: flex; flex-flow: row nowrap; 
 	      justify-content: center; 
-		  background-color: black;
+		  background-color: $negro;
           font-family: $fuente; 
 		  list-style-type: none;
           margin: 0%;
@@ -11,7 +11,7 @@
 
 .footerredes{ display: flex;
               justify-content: center;
-			  background-color: black;
+			  background-color: $negro;
 			  font-size: 2rem;
 			  list-style-type: none;
 			  column-gap: 50px;

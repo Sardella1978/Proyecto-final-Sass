@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--META SEO-->
     <meta name="description" content="Sitio web dedicado a la historia del arte cinematográfico. Un panorama que recorre la histora del cine desde sus comienzos, repasando las corrientes cinematográficas más importantes de la historia
     los directores más emblemáticos del séptimo arte">
     <meta name="keywords" content="historia del cine, cine arte, séptimo arte,CineArte">
@@ -24,136 +25,59 @@
     
     <!--MI CSS-->
     <link rel="stylesheet" href="css/styles.css">
-
-    <!--BOTON IR ARRIBA-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type='text/javascript'>
-      $(document).ready(function(){ 
-      $(window).scroll(function(){ 
-        if ($(this).scrollTop() > 100) { 
-            $('#scroll').fadeIn(); 
-        } else { 
-            $('#scroll').fadeOut(); 
-        } 
-    }); 
-    $('#scroll').click(function(){ 
-        $("html, body").animate({ scrollTop: 0 }, 600); 
-        return false; 
-    }); 
-    });
-   </script>
-<style type="text/css">
-/* BackToTop button css */
-#scroll {
-    position:fixed;
-    right:10px;
-    bottom:10px;
-    cursor: pointer;
-    width:50px;
-    height:50px;
-    background-color:#fc8506;
-    text-indent:-9999px;
-    display:none;
-    -webkit-border-radius:60px;
-    -moz-border-radius:60px;
-    border-radius:60px
-}
-#scroll span {
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin-left:-8px;
-    margin-top:-12px;
-    height:0;
-    width:0;
-    border:8px solid transparent;
-    border-bottom-color:#ffffff
-}
-#scroll:hover {
-    background-color:#e74c3c;
-    opacity:1;filter:"alpha(opacity=100)";
-    -ms-filter:"alpha(opacity=100)";
-}
-</style>
+   
 </head>
 <body class="body">
     
 <!--HEADER-->
-    <header class="header">
-            
-                <h1>CineArte.com</h1>                    
-       
-    </header> 
+  <header class="header">       
+        <h1>CineArte.com</h1>                         
+  </header>
+    
+    <!--NAV CON BOOTSTRAP-->
 
-<!--NAV CON BOOTSTRAP-->    
-
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" style="color:#fc8506; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" href="./index.html">CineArte.com</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: #fc8506;">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav";>
-              <ul class="navbar-nav justify-content-around flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link" style="color: #fc8506;" href="./Pages/Corrientes.html">Corrientes</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: #fc8506;" href="./Pages/Directores.html">Directores</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: #fc8506;" href="./Pages/Galería.html">Galería</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: #fc8506;" href="./Pages/Contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>  -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" style="color: #fc8506;" href="./index.html">CineArte.com</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" style="color: #fc8506;" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav justify-content-around flex-grow-1 pe-3">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" style="color: #fc8506;" href="Pages/Corrientes.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="color: #fc8506;" href="./index.html">CineArte.com</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" style="color: #fc8506;" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav justify-content-around flex-grow-1 pe-3">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: #fc8506;" href="Pages/Corrientes.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Corrientes
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: black;">
-                  <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#lospioneros">Los pioneros</a></li>
-                  <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#laindustriayelarte">La industria y el arte</a></li>
-                  <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#elcinemudo">Cine mudo</a></li>
-                  <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#elcinesonoro">Cine sonoro</a></li>
-                  <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#neorrealismo">Neorrealismo italiano</a></li>
-                  <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#nouvelle">Nouvelle Vage</a></li>
-                  <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#hollywood">Cine clásico de Hollywood</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" style="color: #fc8506;" href="Pages/Directores.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: black;">
+                <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#lospioneros">Los pioneros</a></li>
+                <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#laindustriayelarte">La industria y el arte</a></li>
+                <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#elcinemudo">Cine mudo</a></li>
+                <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#elcinesonoro">Cine sonoro</a></li>
+                <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#neorrealismo">Neorrealismo italiano</a></li>
+                <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#nouvelle">Nouvelle Vage</a></li>
+                <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Corrientes.html#hollywood">Cine clásico de Hollywood</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" style="color: #fc8506;" href="Pages/Directores.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Directores
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: black;">
-                  <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#chaplin">Charles Chaplin</a></li>
-                  <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#wells">Orson Wells</a></li>
-                  <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#hitchckok">Alfred Hitchckok</a></li>
-                  <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#truffaut">Francoise Trufaut</a></li>
-                  <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#rosellini">Roberto Rosellini</a></li>
-                </ul>
-              </li>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: black;">
+                <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#chaplin">Charles Chaplin</a></li>
+                <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#wells">Orson Wells</a></li>
+                <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#hitchckok">Alfred Hitchckok</a></li>
+                <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#truffaut">Francoise Trufaut</a></li>
+                <li><a class="dropdown-item" style="color: #fc8506;" href="./Pages/Directores.html#rosellini">Roberto Rosellini</a></li>
+              </ul>
+            </li>
               
-              <li class="nav-item">
-                <a class="nav-link" style="color: #fc8506;" href="./Pages/Galería.html">Galería</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" style="color: #fc8506;" href="./Pages/Contacto.html">Contacto</a>
-              </li>
-            
-            </ul>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #fc8506;" href="./Pages/Galería.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: #fc8506;" href="./Pages/Contacto.html">Contacto</a>
+            </li>
+           </ul>
           </div>
         </div>
       </nav>
@@ -199,22 +123,23 @@
                 
           
             
-      </section>
+    </section>
 
     <section class="section">
-         <div class="subtitulo"><h2>Las corrientes cinematográficas</h2></div>
-         <div class="gridFotos">
+      <div class="subtitulo">
+        <h2>Las corrientes cinematográficas</h2>
+      </div>
+
+        <div class="gridFotos">
           <img src="./Imagenes/Index/Corrienteshollywood1.jpg" class="gridFotosImage">
           <img src="./Imagenes/Index/Corrientesexpresionismo.jpg" alt="" class="gridFotosImage">
           <img src="./Imagenes/Index/Corrientesnouvellevage.jpg" alt=""class="gridFotosImage">
-      </div>  
+        </div>  
          <p>En esta sección van a encontrar un recorrido por aquellas corrientes cinematográficas que consideramos fundamentales para el desarrollo y la evolución del arte cinematográfico a lo largo del siglo XX.<br>
           El cine no nace como un arte, esa idea vendrá décadas más tarde de su creación, sino que nace como un fenómeno ligado a la ciencia y la tecnología. Lo que Louis Lumiere pretendía presentar, con pocas expectativas, pero finalmente mucho éxito, aquel 28 de diciembre de 1895, no era una disciplina artística, tampoco un entretenimiento de masas, sino un invento: el cinematógrafo: una máquina capaz de registrar imágenes reales dinámicas, en movimiento; algo totalmente impensado para la época.<br> 
           A partir de ese momento, su evolución fue fulminante. Atravesando crisis sociales y económicas, guerras y todo obstáculo imaginable, esa máquina se fue trasformando en creadora de mitos, instrumento ideológico, documento de época, espectáculo, industria, arte.<br>
-           </p>
-         
-         
-      
+          </p>
+               
          <div class="flexBoton">
          <h5><a href="./Pages/Corrientes.html">Ir a Corrientes</a></h5>
         </div>
@@ -262,25 +187,78 @@
     <!--BOTON IR ARRIBA-->
 
     <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
-
+        
     <!--FOOTER-->
 
     <footer>
       
-            <ul class="footer">
-              <li>Privacidad</li>
-              <li>Aviso legal</li>
-              <li><a href="./Pages/Contacto.html">Contacto</a></li>
-            </ul>    
-            <ul class="footerredes">
-              <li><a href="https://www.facebook.com/groups/610385062382950"><i class="fa fa-facebook-square"></i></a></li>
-              <li><a href="https://www.instagram.com/historiadel_cine/"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="https://twitter.com/abc_PlayCine"><i class="fa fa-twitter-square"></i></a></li>
-              <li><a href="https://ar.pinterest.com/search/pins/?q=historia%20del%20cine&rs=typed&term_meta[]=historia%7Ctyped&term_meta[]=del%7Ctyped&term_meta[]=cine%7Ctyped"><i class="fa fa-pinterest-square"></i></a></li>
-            </ul>            
+      <ul class="footer">
+        <li>Privacidad</li>
+        <li>Aviso legal</li>
+        <li><a href="./Pages/Contacto.html">Contacto</a></li>
+      </ul>    
+      <ul class="footerredes">
+        <li><a href="https://www.facebook.com/groups/610385062382950"><i class="fa fa-facebook-square"></i></a></li>
+        <li><a href="https://www.instagram.com/historiadel_cine/"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/abc_PlayCine"><i class="fa fa-twitter-square"></i></a></li>
+        <li><a href="https://ar.pinterest.com/search/pins/?q=historia%20del%20cine&rs=typed&term_meta[]=historia%7Ctyped&term_meta[]=del%7Ctyped&term_meta[]=cine%7Ctyped"><i class="fa fa-pinterest-square"></i></a></li>
+      </ul>            
     </footer>
+
+  <!--SCRIPS-->  
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
-    
-   </body>
+  <!--BOOTSTRAP-->  
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+  
+  <!--BOTON ARRIBA--> 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type='text/javascript'>
+      $(document).ready(function(){ 
+      $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+      }); 
+      $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+      }); 
+      });
+    </script>
+    <style type="text/css">
+    /* BackToTop button css */
+     #scroll {
+       position:fixed;
+       right:10px;
+       bottom:10px;
+       cursor: pointer;
+       width:50px;
+       height:50px;
+       background-color:#fc8506;
+       text-indent:-9999px;
+       display:none;
+      -webkit-border-radius:60px;
+      -moz-border-radius:60px;
+       border-radius:60px
+       }
+     #scroll span {
+       position:absolute;
+       top:50%;
+       left:50%;
+       margin-left:-8px;
+       margin-top:-12px;
+       height:0;
+       width:0;
+       border:8px solid transparent;
+       border-bottom-color:#ffffff
+       }
+     #scroll:hover {
+       background-color:#e74c3c;
+       opacity:1;filter:"alpha(opacity=100)";
+       -ms-filter:"alpha(opacity=100)";
+       }
+    </style>
+</body>
 </html>
