@@ -1,9 +1,6 @@
 
 @media only screen and (min-width:0px) and (max-width: 479px){
-	
-	h1, h2,h3,h5,h6{color: $naranja; 
-		font-family:$fuente;}
-    
+	   
 	.gridGalería {
 		display: grid;
 		grid-template-columns: repeat(1, 2fr);}
@@ -32,11 +29,7 @@
 	h1 {padding-top: none;
 		padding-right: none;
 		text-align: center;
-		font-size: 3.5rem;}	
-	
-		h1, h2,h3,h5,h6{ 
-			font-family:$fuente;}
-        
+		font-size: 3.5rem;}
 	
 	.gridFotos {
 		display: grid;
