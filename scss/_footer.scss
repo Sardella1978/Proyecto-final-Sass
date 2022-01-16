@@ -1,26 +1,19 @@
 
-.footer { display: flex; flex-flow: row nowrap; 
-	      justify-content: center; 
-		  background-color: $negro;
+.footer { background-color: $negro;
           font-family: $fuente; 
-		  list-style-type: none;
-          margin: 0%;
-          padding-top: 20px; padding-bottom: 20px;
-          column-gap: 200px;
+		  padding-top: 20px; padding-bottom: 20px;
+		  
 }
+.footer1{display: flex; flex-direction: row; justify-content: center; list-style-type: none;
+         column-gap: 200px;}
 
-.copy{display: flex;
-      justify-content: center;
-	  background-color: black;}
+.footer2{display: flex; flex-flow: row nowrap; justify-content: center; column-gap: 80px;
+         padding-top: 20px; padding-bottom: 20px;}
 
-// .footerredes{ display: flex;
-//               justify-content: center;
-// 			  background-color: $negro;
-// 			  font-size: 2rem;
-// 			  list-style-type: none;
-// 			  column-gap: 50px;
-// 			  margin-bottom: 0%;
-// 			  padding-bottom: 30px;}
+.footer3{display: flex; flex-flow: row nowrap; justify-content: center;}
+
+
+
 
 
 

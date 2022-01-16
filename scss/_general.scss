@@ -37,7 +37,7 @@ a {
 	text-decoration: none;
 	
 }
-li {
+li {list-style-type: none;
 	
 	&:hover {
 		background-color: gray;
