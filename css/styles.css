@@ -140,7 +140,8 @@ li {
   justify-content: center;
   column-gap: 80px;
   padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  font-size: 2rem; }
 
 .footer3 {
   display: flex;
